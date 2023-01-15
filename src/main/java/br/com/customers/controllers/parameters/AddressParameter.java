@@ -1,24 +1,24 @@
 package br.com.customers.controllers.parameters;
 
 import br.com.customers.models.Address;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 
 
 public class AddressParameter implements Serializable {
-    @ApiModelProperty(value = "Street name of the customer", example = "Via Una", position = 1)
+    @Schema(name = "address", description = "Street name of the customer", example = "Via Una")
     private String street;
-    @ApiModelProperty(value = "Number of the residence of the customer", example = "420", position = 2)
+    @Schema(name = "address", description = "Number of the residence of the customer", example = "420")
     private String number;
-    @ApiModelProperty(value = "Neighborhood name of the customer", example = "Tarumã-Açu", position = 3)
+    @Schema(name = "address", description = "Neighborhood name of the customer", example = "Tarumã-Açu")
     private String neighborhood;
-    @ApiModelProperty(value = "City name of the customer", example = "Manaus", position = 4)
+    @Schema(name = "address", description = "City name of the customer", example = "Manaus")
     private String city;
-    @ApiModelProperty(value = "Province name of the customer", example = "AM", position = 5)
+    @Schema(name = "address", description = "Province name of the customer", example = "AM")
     private String province;
-    @ApiModelProperty(value = "Country name of the customer", example = "Brasil", position = 6)
+    @Schema(name = "address", description = "Country name of the customer", example = "Brasil")
     private String country;
-    @ApiModelProperty(value = "Post code number of the customer", example = "69022-560", position = 7)
+    @Schema(name = "address", description = "Post code number of the customer", example = "69022-560")
     private String postCode;
 
     public String getStreet() {
